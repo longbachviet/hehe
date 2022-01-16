@@ -20,8 +20,6 @@ public class combo_nhom extends AppCompatActivity {
         combo1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentcb1 = new Intent(combo_nhom.this, trangchu.class);
-                startActivity(intentcb1);
             }
         });
         combo3.setOnClickListener(new View.OnClickListener() {
@@ -34,16 +32,12 @@ public class combo_nhom extends AppCompatActivity {
         dath.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(combo_nhom.this, donhang.class);
-                startActivity(intent);
             }
         });
 
         dath1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(combo_nhom.this, donhang.class);
-                startActivity(intent);
             }
         });
     }

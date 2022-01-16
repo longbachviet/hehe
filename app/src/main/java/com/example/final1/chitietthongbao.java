@@ -23,22 +23,16 @@ public class chitietthongbao extends AppCompatActivity {
         tctb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(chitietthongbao.this, trangchu.class);
-                startActivity(intent);
             }
         });
         nhahagtctb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(chitietthongbao.this, trangchu.class);
-                startActivity(intent);
             }
         });
         donhagtctb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(chitietthongbao.this, trangchu.class);
-                startActivity(intent);
             }
         });
         canhantctb.setOnClickListener(new View.OnClickListener() {

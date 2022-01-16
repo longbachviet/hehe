@@ -4,243 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:background="@color/white">
+    tools:context=".MainActivity">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fillViewport="true">
+        android:gravity="center"
+        android:orientation="vertical">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
 
-            <RelativeLayout
+            <TextView
+                android:id="@+id/txtPizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="PizzaHub"
+                android:textColor="#EF0D0D"
+                android:textSize="30dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/tvPz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPizza"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Mang cả thế giới Pizza về nhà bạn!"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:textStyle="bold"></TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgPizza"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/txtPizza"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="PizzaHub"
-                    android:textColor="#EF0D0D"
-                    android:textSize="30dp"
-                    android:textStyle="bold"></TextView>
-
-                <TextView
-                    android:id="@+id/tvPz"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/txtPizza"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginBottom="10dp"
-                    android:text="Mang cả thế giới Pizza về nhà bạn!"
-                    android:textColor="#000"
-                    android:textSize="16dp"
-                    android:textStyle="bold"></TextView>
-
-            </RelativeLayout>
+                android:layout_height="180dp"
+                android:src="@drawable/p2"></ImageView>
 
             <LinearLayout
+                android:id="@+id/gachngang"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#EF0d0d"
+                android:layout_height="5dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/line"
+                android:orientation="vertical"></LinearLayout>
 
-                android:orientation="horizontal"
-                android:weightSum="3">
+        </RelativeLayout>
 
-                <Button
-                    android:id="@+id/cb1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="6dp"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginBottom="3dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="#EF0D0D"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="COMBO 1 NGƯỜI"
-                    android:textColor="#fff"
-                    android:textSize="17dp"
-
-                    android:textStyle="bold"></Button>
-
-                <Button
-                    android:id="@+id/cb2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="3dp"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginBottom="3dp"
-                    android:layout_weight="1"
-                    android:background="@color/white"
-                    android:padding="5dp"
-                    android:text="COMBO 1 nhóm"
-                    android:textColor="#EF0D0D"
-                    android:textSize="17dp"
-                    android:textStyle="bold"></Button>
-
-                <Button
-                    android:id="@+id/cb3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="3dp"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginBottom="3dp"
-                    android:layout_weight="1"
-                    android:background="@color/colorPrimary1"
-                    android:padding="5dp"
-                    android:text="COMBO ưu đãi"
-                    android:textColor="#EF0D0D"
-                    android:textSize="17dp"
-                    android:textStyle="bold"></Button>
-            </LinearLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/tvGH"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="12dp"
-                    android:background="@color/colorPrimary1"
-                    android:drawableLeft="@drawable/user"
-                    android:text=" Giao hàng đến:"
-                    android:textColor="#000"
-                    android:textSize="17dp"
-                    android:textStyle="bold"></TextView>
-
-                <Button
-                    android:id="@+id/thaydoi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="145dp"
-                    android:layout_toRightOf="@+id/tvGH"
-                    android:background="@drawable/botron1"
-                    android:drawableRight="@drawable/edit"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="Thay đổi"
-                    android:textColor="#000"
-                    android:textSize="16dp"
-                    android:textStyle="bold"></Button>
-
-                <TextView
-                    android:id="@+id/tc_diachi"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/tvGH"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="195/14A Ông Ích Khiêm, Thanh Bình Hải Châu, Đà Nẵng"
-                    android:textColor="#000"
-                    android:textSize="16dp"
-                    android:textStyle="bold"></TextView>
-
-                <ImageView
-                    android:id="@+id/imgPizza"
-                    android:layout_width="wrap_content"
-                    android:layout_height="130dp"
-                    android:layout_below="@+id/tc_diachi"
-                    android:src="@drawable/p2"></ImageView>
-
-                <TextView
-                    android:id="@+id/txtTatCa"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/imgPizza"
-                    android:gravity="center"
-                    android:text="TẤT CẢ"
-                    android:textColor="#EF0D0D"
-                    android:textSize="20dp"
-                    android:textStyle="bold"></TextView>
-
-                <LinearLayout
-                    android:id="@+id/gachngang"
-                    android:layout_width="match_parent"
-                    android:layout_height="5dp"
-                    android:layout_below="@id/txtTatCa"
-                    android:background="@drawable/line"
-                    android:orientation="vertical"></LinearLayout>
-            </RelativeLayout>
-
-            <ListView
-                android:id="@+id/list_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"></ListView>
-
-        </LinearLayout>
-    </ScrollView>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="0dp"
-        >
-
-        <LinearLayout
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvItem"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="0dp"
-            android:background="@drawable/footer"
-            android:orientation="horizontal">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#fff"
-                android:drawableTop="@drawable/resred"
-                android:text="Nhà hàng"
-                android:textColor="#000"></Button>
-
-            <Button
-                android:id="@+id/dh"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#fff"
-                android:drawableTop="@drawable/donhang"
-                android:text="Đơn hàng"
-                android:textColor="#000"></Button>
-
-            <Button
-                android:id="@+id/thongbao"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#fff"
-                android:drawableTop="@drawable/noti"
-                android:text="Thông báo"
-                android:textColor="#000"></Button>
-
-            <Button
-                android:id="@+id/tk"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#fff"
-                android:drawableTop="@drawable/us"
-                android:text="Tài Khoản"
-                android:textColor="#000"></Button>
-        </LinearLayout>
-    </RelativeLayout>
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 </LinearLayout>

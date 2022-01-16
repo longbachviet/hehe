@@ -23,8 +23,6 @@ public class donhangpr extends AppCompatActivity {
         nhB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(donhangpr.this, trangchu.class);
-                startActivity(intent1);
             }
         });
         tbB.setOnClickListener(new View.OnClickListener() {

@@ -27,8 +27,6 @@ public class second extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(second.this, donhang.class);
-                startActivity(intent);
             }
         });
     }

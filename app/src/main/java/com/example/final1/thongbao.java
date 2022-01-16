@@ -34,8 +34,6 @@ public class thongbao extends AppCompatActivity {
         nhahagtb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(thongbao.this, trangchu.class);
-                startActivity(intent);
             }
         });
         donhagtb.setOnClickListener(new View.OnClickListener() {

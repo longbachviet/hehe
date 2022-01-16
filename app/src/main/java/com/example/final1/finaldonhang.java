@@ -27,8 +27,6 @@ public class finaldonhang extends AppCompatActivity {
         btnQL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(finaldonhang.this,trangchu.class);
-                startActivity(intent);
             }
         });
     }

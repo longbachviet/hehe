@@ -1,6 +1,5 @@
 package com.example.final1;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -9,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 
 public class dangnhap extends AppCompatActivity {
@@ -44,7 +45,7 @@ public class dangnhap extends AppCompatActivity {
                 String a = taikhoan.getText().toString();
                 String b = matkhau.getText().toString();
                 if (a.equals(tk) && b.equals(mk) ){
-                              Intent intent = new Intent(dangnhap.this, trangchu.class);
+                              Intent intent = new Intent(dangnhap.this, MainActivity.class);
                 startActivity(intent);
                 }
                 else {
@@ -61,4 +62,5 @@ public class dangnhap extends AppCompatActivity {
             }
         });
     }
+
 }
